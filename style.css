@@ -1,9 +1,143 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+.main-content {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 20px auto;
+  position: relative;
+}
+.left-section {
+  background-color: #0b132b;
+  grid-column: span 1;
 }
 
-/* Write CSS code below */
+.left-content {
+  padding: 1rem;
+}
+
+.profile-image {
+  display: block;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 30%;
+}
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  letter-spacing: 2px;
+  color: white;
+}
+.designation {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  color: white;
+  letter-spacing: 3px;
+}
+hr {
+  background-color: white;
+}
+.description {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+.social-media {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  margin: auto;
+}
+.personal-details {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  font-size: 15px;
+  margin: auto;
+}
+.mail {
+  color: white;
+  text-decoration: none;
+}
+.icon {
+  display: block;
+  margin: auto;
+  padding: 8px;
+}
+.fa-brands {
+  color: white;
+}
+.fa-solid {
+  color: white;
+}
+.fa-solid fa-location-dot {
+  text-decoration: none;
+}
+.skills {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+  color: white;
+}
+.skills-title {
+  letter-spacing: 0.5rem;
+}
+.skill-name {
+  color: white;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.progress-bar {
+  height: 4px;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+}
+.skill-item {
+  padding: 0.5rem;
+}
+
+.right-section {
+  font-family: "Poppins", sans-serif;
+  background-color: #caf0f8;
+  grid-column: span 1 / span 2;
+}
+.right-main-content {
+  padding: 2rem 3rem;
+}
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+.para {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 0px) and (max-width: 673px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
